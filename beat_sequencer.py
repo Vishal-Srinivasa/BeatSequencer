@@ -294,7 +294,7 @@ Button(root, image = sub_i, font=10, command=lambda: Thread(target=remove).start
 Button(root, text="Open", font=10, command=lambda: Thread(target=bar_list).start(), bg = 'grey36', fg = 'turquoise3', activebackground = 'grey36', activeforeground = 'MediumPurple1').place(x=470, y=600, width=100, height=35)
 Open()
 
-mydb = mysql.connector.connect(host='localhost', user='root', passwd='Vishal1116')
+mydb = mysql.connector.connect(host='localhost', user='root', passwd='')
 mycursor = mydb.cursor()
 
 mycursor.execute('create database if not exists music_sequencer')
